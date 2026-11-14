@@ -7,7 +7,6 @@ export default defineConfig(({ mode }) => {
   const env = loadEnv(mode, process.cwd(), '');
 
   return {
-    base: '/shipf/',
     plugins: [react()],
     server: { port: Number(env.VITE_APP_PORT) || 3000 },
     resolve: {
