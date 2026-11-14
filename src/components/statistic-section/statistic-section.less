@@ -1,0 +1,62 @@
+.statistic {
+  &__list {
+    padding-left: 0;
+    list-style: none;
+  }
+
+  &__item {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    padding: 80px 0;
+    border-radius: 15px;
+
+    &-quantity {
+      font-size: 5.5rem;
+      font-weight: 700;
+    }
+
+    &-videos {
+      background: #ecf8ff;
+      border: 1px dashed #169fed;
+      color: #169fed;
+    }
+
+    &-views {
+      background: #fefefe;
+      border: 1px dashed #ef720c;
+      color: #ef720c;
+      margin-top: 24px;
+    }
+
+    &-members {
+      background: #fffbfa;
+      border: 1px dashed #dd2f16;
+      color: #dd2f16;
+    }
+
+    &-partners {
+      background: #f6fffb;
+      border: 1px dashed #16ed8f;
+      color: #16ed8f;
+      margin-top: 24px;
+    }
+  }
+
+  &__content {
+    padding: 46px;
+    line-height: 1.6;
+
+    &-title {
+      font-size: 3.2rem;
+    }
+
+    &-description {
+      color: #507392;
+      line-height: 1.8;
+      font-size: 1.6rem;
+      margin: 24px 0 24px;
+    }
+  }
+}
