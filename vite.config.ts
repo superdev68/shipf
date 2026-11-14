@@ -3,12 +3,13 @@ import * as path from 'path';
 import { defineConfig, loadEnv } from 'vite';
 
 // https://vitejs.dev/config/
-export default defineConfig((mode) => {
-  const env = loadEnv(mode, process.cwd());
+export default defineConfig(({ mode }) => {
+  const env = loadEnv(mode, process.cwd(), '');
 
   return {
+    base: '/shipf/',
     plugins: [react()],
-    server: { port: env.VITE_APP_PORT },
+    server: { port: Number(env.VITE_APP_PORT) || 3000 },
     resolve: {
       alias: [{ find: '@', replacement: path.resolve(__dirname, 'src') }],
     },
