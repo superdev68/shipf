@@ -31,7 +31,6 @@ coverage
 
 # Package files
 *.jar
-package-lock.json
 yarn.lock
 yarn-error.lock
 build
